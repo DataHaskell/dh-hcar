@@ -1,0 +1,39 @@
+\documentclass[DIV16,twocolumn,10pt]{scrreprt}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage[final]{hcar}
+
+%include polycode.fmt
+
+\begin{document}
+
+\begin{hcarentry}{(Data Haskell)}
+\report{(Marco Zocca)}
+\status{(Alive and well)}
+\participants{(Nikita Tchayka, John Vial, $\cdots$)}% optional
+\makeheader
+
+The DataHaskell community was initiated in September 2016 as a gathering place for machine learning / data science practitioners and Haskell programmers; we observe a growing interest in using functional composition, domain-specific languages and type inference for implementing robust data processing pipelines, and reusable algorithm implementations.
+%If you want to include Haskell code, consider using lhs2tex syntax (\url{http://people.cs.uu.nl/andres/lhs2tex/}).
+
+%(WHAT IS IT?)
+
+Members of DataHaskell gather in the following places: a GitHub organization \footnote{\url{https://github.com/DataHaskell}}, a Gitter chatroom \footnote{\url{https://gitter.im/dataHaskell/Lobby}}, and an introduction website \footnote{\url{http://datahaskell.org}}. The development team uses a Trello board to track the details of ongoing activities \footnote{\url{https://trello.com/b/ucB25d5v/tasks}}.
+
+One of our first steps was setting up a wiki \footnote{\url{http://datahaskell.org/wiki}} to serve as a knowledge base of related Haskell packages and frameworks.
+
+After an informal survey the community seems to be lacking most:
+\begin{itemize} 
+\item an IDE for exploratory data analysis,
+\item a generic `data-frame' for fast import and manipulation of heterogeneous tabular data,
+\item a native numerical back-end;
+\end{itemize}
+therefore current DataHaskell activities are first focusing on improving the ergonomics of the IHaskell notebook \footnote{\url{https://github.com/DataHaskell/DataIHaskell}}, and putting it to use on a Kaggle classification exercise \footnote{\url{https://github.com/johnny555/ToolExamples/tree/master/Kaggle/Titanic}}. This will serve to highlight the merits and the gaps or inefficiencies in the current package landscape.
+
+We cherish the open and multidisciplinary nature of our community, and welcome all new users and contributions.
+
+\FurtherReading
+  \url{datahaskell.org}
+\end{hcarentry}
+
+\end{document}
