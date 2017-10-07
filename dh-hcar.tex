@@ -1,0 +1,45 @@
+\documentclass[DIV16,twocolumn,10pt]{scrreprt}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage[final]{hcar}
+
+%include polycode.fmt
+
+\begin{document}
+
+\begin{hcarentry}{DataHaskell}
+\report{Marco Zocca}
+\status{Ongoing}
+\participants{Nikita Tchayka, Mahdi Dibaiee, \\John Vial, Stefan Dresselhaus,\\ and many others}% optional
+\makeheader
+
+The DataHaskell community was initiated in September 2016 as a gathering place for scientific computing, machine learning and data science practitioners and Haskell programmers; we observe a growing interest in using functional composition, domain-specific languages and type inference for implementing robust and reusable data processing pipelines.
+%If you want to include Haskell code, consider using lhs2tex syntax (\url{http://people.cs.uu.nl/andres/lhs2tex/}).
+
+DataHaskell revolves around a Gitter chatroom \footnote{\url{https://gitter.im/dataHaskell/Lobby}} and a GitHub organization \footnote{\url{https://github.com/DataHaskell}}. The community is slowly but steadily growing; new interested people join the chatroom discussion (which now counts more than 230 unique users) every few days, and 20 or so are active on an average week.
+
+We have a documentation site \footnote{\url{http://www.datahaskell.org/docs/}} that serves both as a knowledge base of related Haskell packages and frameworks and to coordinate development, along with a package benchmarking repository \footnote{\url{https://github.com/DataHaskell/numeric-libs-benchmarks}}.
+
+After an informal survey we concluded that large part of our userbase seems to be lacking most
+\begin{itemize} 
+\item an IDE for exploratory data analysis,
+\item a generic `data-frame' for fast import and manipulation of heterogeneous tabular data,
+\item a native numerical back-end.
+\end{itemize}
+
+The notebook-IDE situation is improving, thanks for example to an updated `iHaskell` and the native `Haskell.do` \footnote{\url{http://haskell.do}} editor. Dataframes are a more subtle topic, that require domain-specific optimizations, and we are also actively working on that after adopting `analyze` \footnote{\url{https://github.com/DataHaskell/analyze}}.
+
+Some of us met in person at ZuriHac (Zurich) and ICFP 2017 (Oxford). An informal DataHaskell workshop took place on Saturday 9, 2017 at ICFP, during which a series (7!) of lightning talks showed various applications of the current state of the library ecosystem, e.g. rendering mathematics-heavy code on Hackage, high-performance numerical computing, probabilistic EDSLs and notebook usage for exploratory data analysis. 
+
+The workshop was well-received and we are evaluating various options for upcoming meetings, e.g. to be hosted at either functional programming or data science conferences.
+
+
+%Current DataHaskell activities are focusing on improving the ergonomics of the IHaskell notebook \footnote{\url{https://github.com/DataHaskell/DataIHaskell}}, and putting it to use on a Kaggle classification exercise \footnote{\url{https://github.com/johnny555/ToolExamples/tree/master/Kaggle}}. This will serve to highlight the merits and the gaps or inefficiencies in the current package landscape.
+
+We cherish the open and multidisciplinary nature of our community, and welcome all new users and contributions.
+
+\FurtherReading
+  \url{datahaskell.org}
+\end{hcarentry}
+
+\end{document}
